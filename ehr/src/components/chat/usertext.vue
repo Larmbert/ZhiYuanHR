@@ -1,6 +1,6 @@
 <template>
     <div id="uesrtext">
-        <textarea placeholder="输入内容，Enter发送" v-model="content" v-on:keyup="addMessage"></textarea>
+        <textarea  v-model="content" v-on:keyup="addMessage"></textarea>
     </div>
 </template>
 
