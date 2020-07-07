@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="vjoin-service" />
+        <module name="vjoin-model" />
+        <module name="vjoin-web" />
+        <module name="mailserver" />
+        <module name="vjoin-mapper" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="vjoin-commons" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="mailserver" options="-parameters" />
+      <module name="vjoin-commons" options="-parameters" />
+      <module name="vjoin-mapper" options="-parameters" />
+      <module name="vjoin-model" options="-parameters" />
+      <module name="vjoin-service" options="-parameters" />
+      <module name="vjoin-web" options="-parameters" />
+    </option>
+  </component>
+</project>
