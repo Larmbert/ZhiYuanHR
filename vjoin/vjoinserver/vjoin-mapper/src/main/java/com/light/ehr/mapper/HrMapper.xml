@@ -61,7 +61,8 @@
       #{username,jdbcType=VARCHAR}, #{password,jdbcType=VARCHAR}, #{userface,jdbcType=VARCHAR}, 
       #{remark,jdbcType=VARCHAR})
   </insert>
-    <insert id="insertSelective" parameterType="com.light.ehr.model.Hr">
+    <insert id="insertSelective" parameterType="com.light.ehr.model.Hr" useGeneratedKeys="true"
+    keyProperty="id">
         insert into hr
         <trim prefix="(" suffix=")" suffixOverrides=",">
             <if test="id != null">

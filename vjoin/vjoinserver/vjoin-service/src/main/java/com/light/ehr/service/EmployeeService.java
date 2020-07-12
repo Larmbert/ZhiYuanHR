@@ -95,7 +95,15 @@ public class EmployeeService {
         return employeeMapper.updateEmployeeSalaryById(eid,sid);
     }
 
-    public List<Employee> getAllPersonals() {
-        return  employeeMapper.getAllPersonals();
+    public RespPageBean getAllPersonals(Integer page,Integer size) {
+        if (page!=null&&size!=null){
+            page=(page-1)*size;
+        }
+        List<Employee> data=employeeMapper.getAllPersonals(page,size);
+        Long total=employeeMapper.getPerTotal();
+        RespPageBean respPageBean=new RespPageBean();
+        respPageBean.setData(data);
+        respPageBean.setTotal(total);
+        return respPageBean;
     }
 }

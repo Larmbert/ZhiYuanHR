@@ -55,4 +55,12 @@ public class HrController {
         }
         return RespBean.error("删除失败o(╯□╰)o");
     }
+    //添加操作员
+    @PostMapping("/")
+    public RespBean addHr(@RequestBody Hr hr){
+        if (hrService.addHr(hr)==1){
+            return RespBean.ok("添加成功！");
+        }
+        return RespBean.error("添加失败o(╯□╰)o");
+    }
 }

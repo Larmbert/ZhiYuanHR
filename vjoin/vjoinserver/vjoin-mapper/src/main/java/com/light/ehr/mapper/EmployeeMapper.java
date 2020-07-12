@@ -35,5 +35,7 @@ public interface EmployeeMapper {
 
     Integer deleteEmpByids(@Param("ids") Integer[] ids);
 
-    List<Employee> getAllPersonals();
+    List<Employee> getAllPersonals(@Param("page") Integer page,@Param("size") Integer size);
+
+    Long getPerTotal();
 }
