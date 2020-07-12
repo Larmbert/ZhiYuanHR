@@ -2,6 +2,7 @@ package com.light.ehr.service;
 
 import com.light.ehr.mapper.EmployeeMapper;
 import com.light.ehr.model.Employee;
+import com.light.ehr.model.RespBean;
 import com.light.ehr.model.RespPageBean;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -92,5 +93,9 @@ public class EmployeeService {
 
     public Integer updateEmployeeSalaryById(Integer eid, Integer sid) {
         return employeeMapper.updateEmployeeSalaryById(eid,sid);
+    }
+
+    public List<Employee> getAllPersonals() {
+        return  employeeMapper.getAllPersonals();
     }
 }

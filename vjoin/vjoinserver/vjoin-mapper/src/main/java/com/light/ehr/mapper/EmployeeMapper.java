@@ -34,4 +34,6 @@ public interface EmployeeMapper {
     Integer updateEmployeeSalaryById(@Param("eid") Integer eid, @Param("sid") Integer sid);
 
     Integer deleteEmpByids(@Param("ids") Integer[] ids);
+
+    List<Employee> getAllPersonals();
 }
