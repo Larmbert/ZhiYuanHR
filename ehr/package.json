@@ -12,7 +12,7 @@
     "element-ui": "^2.13.1",
     "fibers": "^5.0.0",
     "font-awesome": "^4.7.0",
-    "node-sass": "^4.14.1",
+    "node-sass": "^7.0.0",
     "sockjs-client": "^1.4.0",
     "stompjs": "^2.3.3",
     "vue": "^2.6.11",
